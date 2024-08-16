@@ -1,19 +1,23 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.container h1 {
+    text-align: center;
 }
-button{
-    background-color: burlywood;
-    height: 50px;
+
+.container img {
     width: 100px;
+    height: 100px;
 }
-h1{
-    align-items: center;
-    justify-items: center;
-}
-img{
-    width: 200px;
-    height: 300px;
+
+.container button {
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(247, 180, 180);
+    box-shadow: 12px;
+    border: none;
+    padding: 15px 15px;
+    width: 120px;
 }

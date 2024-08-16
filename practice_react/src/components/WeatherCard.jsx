@@ -1,28 +1,31 @@
-import React from 'react'
-import "./WeatherCard.css"
-const WeatherCard = ({Location ,pic,data}) => {
+import React from "react";
+import "./WeatherCard.css";
+
+const WeatherCard = ({ data, location, pic }) => {
   return (
     <div>
-      <main className="main">
-  <div className="left">
-    <div className="date">
-      Friday, 9 August 2024    </div>
-    <div className="city">
-      {Location}
+      <div className="widget">
+        <div className="left-panel panel">
+          <div className="date">Monday, 20 Aug 2018</div>
+          <div className="city">{location}</div>
+          <div className="temp">
+            <img src="https://codefrog.space/cp/wp/ts.png" alt width={60} />
+            {data}°
+          </div>
+        </div>
+        <div className="right-panel panel">
+          <img src={pic} alt width={160} />
+        </div>
+      </div>
+      <a
+        id="btnDownload"
+        href="https://www.codefrog.co.in/post/mini-weather-card/"
+        target="_blank"
+      >
+        <img src="https://www.pngmart.com/files/10/Red-Download-Now-Button-PNG-File.png" />
+      </a>
     </div>
-    <div className="tempreture">
-      <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="icon" className="left-img" />
-      {data}°
-    </div>
-  </div>
-  <div className="right">
-    <div className="city-img">
-      <img src={pic} alt="tajmahal" className="right-img" />
-    </div>
-  </div>
-</main>
-    </div>
-  )
-}
+  );
+};
 
-export default WeatherCard
+export default WeatherCard;

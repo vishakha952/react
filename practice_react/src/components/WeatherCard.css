@@ -1,64 +1,69 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: teal;
+    overflow: hidden;
+    background: #009688;
+    ;
 }
 
-.main {
-
-    width: 400px;
-    height: 200px;
+div.widget {
+    position: relative;
+    width: 355px;
+    height: 125px;
     margin: 150px auto;
-    background-color: #FFFFF0;
+    background-color: #fcfdfd;
+    border-radius: 9px;
+    padding: 25px;
+    padding-right: 30px;
     box-shadow: 0px 31px 35px -26px #080c21;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
 }
 
-.left {
-    margin-top: 20px;
-    padding: 15px;
-}
-
-.right {
-
-    margin-top: 35px;
-    margin-right: 5px;
-}
-
-.left-img {
-
-    width: 60px;
-}
-
-.right-img {
-
-    width: 180px;
-    border-radius: 20px;
-}
-
-.date {
+div.date {
     font-size: 14px;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.5);
-    font-weight: bold;
 }
 
-.city {
+div.city {
     font-size: 21px;
-    color: rgba(0, 0, 0, 0.7);
-    padding-top: 5px;
-    text-transform: uppercase;
     font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 5px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
-.tempreture {
-    padding-top: 10px;
-    font-size: 61px;
+div.temp {
+    font-size: 81px;
     color: rgba(0, 0, 0, 0.9);
     font-weight: 100;
+}
+
+div.panel {
+    display: inline-block;
+}
+
+div.right-panel {
+    position: absolute;
+    float: right;
+    top: 0;
+    margin-top: 35px;
+    padding-left: 10px;
+}
+
+
+#btnDownload {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+#btnDownload img {
+    width: 135px;
+
 }
